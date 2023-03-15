@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital@0;1&family=Roboto:ital@0;1&display=swap');
+
+
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+    background-color: black;
+}
+.wrapper{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+
+.wrapper > *{
+    flex: 1 100%;
+    
+}
+
+
+main{
+    background-image: url('../media/background.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* ------------NAV BAR--------- */
+
+header{
+    position: relative;
+}
+
+.navigation-bar {
+    display: flex;
+    width: 100%; 
+    max-width: 165vh;
+    border-top: #ffffff solid;
+    border-bottom: #ffffff solid;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+/* ============ LOGO ============ */
+.logonav{
+    display: flex;
+    width: 300px;
+    height: 150px;
+}
+
+/* =========== MENU ============ */
+.navigation-bar .navBarText{
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    gap: 2rem;
+}
+
+.navLinks:hover, .navSignIn:hover{
+    transform: translateY(-10px);
+    transition: transform 0.3s;
+}
+
+li{
+    list-style: none;
+    color: white;
+}
+
+.navLinks > a, .signIn > a{
+    text-decoration: none;
+    font-size: larger;
+}
+
+.navLinks > a:focus, a:visited, a:link{
+    color: white;
+}
+
+.navLinks > a:active, a.currentPage{
+    color: #429EA6;
+}
+.navLinks > a:hover, .navSignIn:hover{
+    color: blue;
+}
+
+/* =========== SIGN IN ======== */
+.navigation-bar .signIn{
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    font-size: larger;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+/* ---------------------------/NAVBAR--------------------------- */
+
+/* ---------------------------FOOTER--------------------------- */
+footer {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #151615;
+}
+
+.direccionFooter{
+    /* font-family: 'Lato', sans-serif; */
+    font-weight: 200;
+    font-size: 14px;
+    color: #d8323c;
+    text-align: center;
+} 
+
+.direccionFooter > a:link{
+    text-decoration: none;
+    color: white;
+}
+.direccionFooter > a:visited{
+    color: white;
+}
+.direccionFooter > a:hover{
+    color: blue;
+}
+.direccionFooter >a:active{
+    color: white
+}
+
+/* ---------------------------/FOOTER--------------------------- */
+
+/* -------------------- Seccion de inicio ---------------------- */
+
+
+.primerParrafo{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.item-1{
+    margin-top: 10px;
+    grid-column: 2/5;
+    justify-items: center;
+}
+.item-2{
+    margin-top: 10px;
+    grid-column: 5/8;
+    border: 5px solid white;
+    justify-self: end;
+
+}
+
+
+
+.videoMain2{
+    display: inline-block;
+    margin-top: 2%;
+    margin-left: 20%;
+    margin-right: 30px;
+    margin-bottom: 2%;
+    vertical-align: middle;
+    border: 5px solid white;
+
+    max-width: 80%;
+    width: 30%;
+}
+.videoMain3{
+    display: inline-block;
+    margin-top: 2%;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 2%;
+    vertical-align: middle;
+    border: 5px solid white;
+
+    max-width: 80%;
+    width: 30%;
+}
+.h1Main{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    vertical-align: middle;
+}
+.h2Main{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    vertical-align: middle;
+}
+.segundoParrafo{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+
+}
+
+
+/* -------------------- Seccion de preguntas ------------------ */
+
+h1, h2, p{
+    color: white;
+}
+h1{
+    text-align: center;
+    margin-top: 1%;
+}
+.cajaPreguntas > h2{
+    margin-left: 1%;
+}
+
+.divPreguntas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+.cajaPreguntas{
+    margin: 20px;
+}
+
+.btnCotizaContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.btnCotiza{
+    display: flex;  
+    width: 30vh;
+    text-align: center;
+    justify-content: center;
+    background-color: #429EA6;
+    padding: 0.5rem 1rem;
+    border: 5px solid #ffffff;
+    outline: none;
+    border-radius: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.btnCotiza > a:link{
+    text-decoration: none;
+}
+.btnCotiza > a:hover{
+    color: blue;
+}
+
+
+
