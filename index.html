@@ -4,31 +4,107 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Driveaway</title>
     <link rel="icon" type="image/x-icon" href="./media/favicon.png">
     <link href="styles/styles.css" rel="stylesheet"/>
 </head>
 <body>
-    <div class="wrapper">
+
         <header>
-            <nav class="navigation-bar">
-                <a target="_blank" href="https://instagram.com/driveway.rd"><img class="logonav" src="./media/driveawaynegro.png"></a>
-                    <ul class="navBarText">
-                        <li class="navLinks"><a class="currentPage" href="index.html">Inicio</a></li>
-                        <li class="navLinks"><a href="./sections/productos.html">Productos</a></li>
-                        <li class="navLinks"><a href="./sections/preguntas.html">Preguntas</a></li>
-                        <li class="navLinks"><a href="./sections/contactos.html">Contactos</a></li>
-                        <li class="navLinks"><a href="./sections/historia.html">Historia</a></li>
-                    </ul>
-                <div class="signIn">
-                    <a class="navSignIn" href="#">Inicia Sesion</a>
-                    <img src="./media/carrito.png" alt="icono carrito de compra">
+            <nav class="navbar navbar-expand-lg navbar-white bg-black">
+                <div class="container-fluid ">
+                    <a class="navbar-brand ms-5" href="/index.html"><img src="./media/driveawaynegro.png" alt="logo Driveaway" width="300" height="150"></a>
+                    <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="toggler-icon top-bar"></span>
+                        <span class="toggler-icon middle-bar"></span>
+                        <span class="toggler-icon bottom-bar"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./sections/productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./sections/preguntas.html">Preguntas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./sections/contactos.html">Contactos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./sections/historia.html">Historia</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
                 </div>
-            </nav>
+            </nav>  
         </header>
         <main>
-            <h1>La Verdadera Razón Por La Que Todos Le Están Colocando Ceramic Coating A Su Vehículo</h1>
+            <section class="container-fluid">
+                <div class="primeraFila row justify-content-center align-items-center pt-3">
+                    <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+                        <h1 class="h1Main mt-2">La Verdadera Razón Por La Que Todos Le Están Colocando Ceramic Coating A Su Vehículo</h1>
+                        <p class="p1Main mt-2">No te pierdas nuestro video explicando por que tenemos que colocar ceramica en nuestros vehiculos</p>
+                        <a class="btn btn-primary btn-lg" href="./sections/productos.html">Quiero conocer los precios</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">  
+                        <iframe class="rounded-3 youtube-video" src="https://www.youtube.com/embed/EJQk2Efjwdg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
         </main>
+        <section class="container-fluid segundoDatos pt-4">
+            <h2 class="text-center text-white pb-4">¿Qué te parecen estos antes y después?</h2>
+            <div class="segundaFila row justify-content-center align-items-center">
+                <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+                    <iframe class="rounded-3 mt-2 mb-2 youtube-video" src="https://www.youtube.com/embed/vtNTSokrGU4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">  
+                    <iframe class="rounded-3 mt-2 mb-2 youtube-video" src="https://www.youtube.com/embed/M85Iub7SIpk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid terceroDatos pt-4 pb-4 ">
+            <h2 class="text-center text-white pb-4">¿Qué beneficios te brindará un Ceramic Coating?</h2>
+            <div class="terceraFila row justify-content-center align-items-center">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./media/cartaBeneficios1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">PROTECCIÓN ANTE ALTAS TEMPERATURAS Y RAYOS UV</h5>
+                            <p class="card-text">Los coatings cerámicos usualmente son utilizados para reducir altas temperaturas, ya que químicamente el coeficiente de transferencia del calor es muy baja. Esto significa que absorben eficientemente el calor convirtiéndose en una excelente barrera térmica. Asimismo, contienen filtros UV. Se evita que el sol afecte al pigmento.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./media/cartaBeneficios2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">EFECTO HIDROFÓBICO</h5>
+                            <p class="card-text">Conocido también como Repelencia de Agua toma vital importancia para lograr que el vehículo se mantenga limpio por más tiempo y sea más fácil de lavar. Esto se debe a que el Coating actúa elevando el ángulo de contacto entre la superficie y la gota de agua. Cuanto mayor es este ángulo menor será el área de la gota de agua que tomará contacto con el panel protegido.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./media/cartaBeneficios3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">DURACIÓN EN EL TIEMPO</h5>
+                            <p class="card-text">La protección de cerámica de las superficies del vehículo está fuertemente ligada al tipo de anclaje que el coating logra sobre la superficie a trabajar. Usualmente y con el correcto mantenimiento, las protecciones cerámicas que son aplicadas sobre la laca, pueden ser medidas en años. Tenemos opciones garantizadas entre 18 meses y 7 años de duración.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <footer>
             <div class="ayudasFooter">
                 <a target ="_blank" href="tel:8493420545"><img src="./media/phone.svg" alt="logo de telefono"></a>
@@ -47,6 +123,6 @@
                 <a target ="_blank" href="https://www.youtube.com/@drivewayrd4416"><img src="./media/youtube.svg" alt="logo de youtube"></a>
             </div>
         </footer>
-    </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

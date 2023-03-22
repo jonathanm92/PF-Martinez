@@ -10,117 +10,116 @@
 body{
     position: relative;
     min-height: 100vh;
-    background-color: black;
+    /* background-color: black; */
 }
-.wrapper{
-    display: flex;
-    flex-flow: column;
-    text-align: center;
-}
-
-.wrapper > *{
-    flex: 1 100%;
-    
-}
-
-
-main{
-    background-image: url('../media/background.jpg');
-    background-attachment: fixed;
+.underConstruction{ 
+    min-height: 90vh;
+    background-image: url("../media/underConstruction.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-
 /* ------------NAV BAR--------- */
-
-header{
+.navbar{
+    background-color: black;
+}
+.navbar-toggler{
+    width: 20px;
+    height: 20px;
     position: relative;
+    transition: .5s ease-in-out;
+}
+.navbar-toggler, .navbar-toggler:focus, 
+.navbar-toggler:active, .navbar-toggler-icon:focus{
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+.navbar-toggler span{
+    margin: 0;
+    padding: 0;
+}
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: white;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+.middle-bar {
+    margin-top: 0px;
 }
 
-.navigation-bar {
-    display: flex;
-    width: 100%; 
-    max-width: 165vh;
-    border-top: #ffffff solid;
-    border-bottom: #ffffff solid;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1em;
+/* cuando clickeamos hace este cambio para convertirlo en X*/
+.navbar-toggler .top-bar{
+    margin-top: 0px;
+    transform: rotate(135deg);
+}
+.navbar-toggler .middle-bar{
+    opacity: 0;
+    filter: alpha(opacity=0);
 }
 
-/* ============ LOGO ============ */
-.logonav{
-    display: flex;
-    width: 300px;
-    height: 150px;
+.navbar-toggler .bottom-bar{
+    margin-top: 0px;
+    transform: rotate(-135deg);
+}
+/* cuando esta colapsado se ve de esta manera */
+.navbar-toggler.collapsed .top-bar{
+    margin-top: -20px;
+    transform: rotate(0deg);
+}
+.navbar-toggler.collapsed .middle-bar{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.navbar-toggler.collapsed .bottom-bar{
+    margin-top: 20px;
+    transform: rotate(0deg);
 }
 
 /* =========== MENU ============ */
-.navigation-bar .navBarText{
-    display: flex;
-    font-family: 'Lato', sans-serif;
-    gap: 2rem;
-}
 
-.navLinks:hover, .navSignIn:hover{
-    transform: translateY(-10px);
-    transition: transform 0.3s;
-}
 
-li{
-    list-style: none;
+.nav-item > a:focus, a:visited, a:link{
     color: white;
 }
 
-.navLinks > a, .signIn > a{
-    text-decoration: none;
-    font-size: larger;
-}
-
-.navLinks > a:focus, a:visited, a:link{
-    color: white;
-}
-
-.navLinks > a:active, a.currentPage{
+.nav-item > a:active, a.currentPage{
     color: #429EA6;
 }
-.navLinks > a:hover, .navSignIn:hover{
+.nav-item > a:hover, .navSignIn:hover{
     color: blue;
 }
 
-/* =========== SIGN IN ======== */
-.navigation-bar .signIn{
-    display: flex;
-    font-family: 'Lato', sans-serif;
-    font-size: larger;
-    align-items: center;
-    gap: 1rem;
-    cursor: pointer;
-}
+
 
 /* ---------------------------/NAVBAR--------------------------- */
 
 /* ---------------------------FOOTER--------------------------- */
 footer {
     display: flex;
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    background-color: #151615;
+    background-color: rgb(19, 19, 19);
 }
 
 .direccionFooter{
     /* font-family: 'Lato', sans-serif; */
-    font-weight: 200;
+    /* font-weight: 50; */
     font-size: 14px;
-    color: #d8323c;
+    color: #ffffff;
     text-align: center;
+
 } 
 
 .direccionFooter > a:link{
@@ -140,80 +139,35 @@ footer {
 /* ---------------------------/FOOTER--------------------------- */
 
 /* -------------------- Seccion de inicio ---------------------- */
-
-
-.primerParrafo{
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(2,1fr);
-    justify-items: center;
-    align-items: center;
-}
-
-.item-1{
-    margin-top: 10px;
-    grid-column: 2/5;
-    justify-items: center;
-}
-.item-2{
-    margin-top: 10px;
-    grid-column: 5/8;
-    border: 5px solid white;
-    justify-self: end;
-
-}
-
-
-
-.videoMain2{
-    display: inline-block;
-    margin-top: 2%;
-    margin-left: 20%;
-    margin-right: 30px;
-    margin-bottom: 2%;
-    vertical-align: middle;
-    border: 5px solid white;
-
-    max-width: 80%;
-    width: 30%;
-}
-.videoMain3{
-    display: inline-block;
-    margin-top: 2%;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 2%;
-    vertical-align: middle;
-    border: 5px solid white;
-
-    max-width: 80%;
-    width: 30%;
+.primeraFila{
+    background-color: rgb(12, 12, 12);
 }
 .h1Main{
-    font-family: 'Lato', sans-serif;
-    text-align: center;
-    vertical-align: middle;
-}
-.h2Main{
-    font-family: 'Lato', sans-serif;
-    text-align: center;
-    vertical-align: middle;
-}
-.segundoParrafo{
-    font-family: 'Lato', sans-serif;
-    text-align: center;
-
-}
-
-
-/* -------------------- Seccion de preguntas ------------------ */
-
-h1, h2, p{
     color: white;
 }
-h1{
+.p1Main{
+    color: #dbdbdb;
+}
+.segundoDatos{
+    background-color: rgb(16,16,16);
+}
+.terceroDatos{
+    background-color: rgb(22, 22, 22);
+}
+
+.youtube-video {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+  }
+
+/* -------------------- Seccion de preguntas ------------------ */  
+
+.h1Preguntas, .h2Preguntas{
+    color: black;
+}
+.h1Preguntas{
     text-align: center;
-    margin-top: 1%;
+    padding-top: 1%;
 }
 .cajaPreguntas > h2{
     margin-left: 1%;
@@ -231,6 +185,7 @@ h1{
 .btnCotizaContainer{
     display: flex;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 .btnCotiza{
@@ -254,6 +209,12 @@ h1{
 .btnCotiza > a:hover{
     color: blue;
 }
-
-
-
+@media screen and (max-width: 900px) {
+    footer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .direccionFooter{
+        opacity: 0;
+    }
+}
