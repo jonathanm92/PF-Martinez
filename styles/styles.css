@@ -212,7 +212,8 @@ footer {
 .btnCotiza > a:hover{
     color: blue;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 990px) {
+
     footer {
         flex-wrap: wrap;
         justify-content: center;
