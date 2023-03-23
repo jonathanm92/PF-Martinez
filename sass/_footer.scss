@@ -1,0 +1,38 @@
+
+/* ---------------------------FOOTER--------------------------- */
+footer {
+    display: flex;
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(19, 19, 19);
+}
+
+.direccionFooter{
+    font-family: 'Lato', sans-serif;
+    font-weight: 50;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    a{
+        &:link{
+            text-decoration: none;
+            color: white;
+        }
+        &:visited{
+            color: white;
+        }
+        &:hover{
+            color: blue;
+        }
+        &:active{
+            color: white
+        }
+    }
+} 
+
+
+/* ---------------------------/FOOTER--------------------------- */
+

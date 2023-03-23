@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital@0;1&family=Roboto:ital@0;1&display=swap');
+@import "general";
+@import "nav";
+@import "footer";
+@import "index";
+@import "preguntas";
+
+
+
+@media screen and (max-width: 990px) {
+
+    footer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .direccionFooter{
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .logoNav{
+        width: 300px;
+        height: 150px;
+    }
+}
+@media screen and (max-width: 420px){
+    .logoNav{
+        width: 180px;
+        height: 100px;
+    }
+}

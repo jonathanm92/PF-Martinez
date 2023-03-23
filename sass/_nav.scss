@@ -1,0 +1,117 @@
+/* ------------NAV BAR--------- */
+.navbar{
+    background-color: black !important;
+}
+.logoNav{
+    width: 350px;
+    height: 150px;
+}
+.navbar-toggler{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transition: .5s ease-in-out;
+    outline: none;
+    box-shadow: none;
+    border: 0;
+    &:focus{
+        outline: none;
+        box-shadow: none;
+        border: 0;
+    }
+    &:active{
+        outline: none;
+        box-shadow: none;
+        border: 0;
+    }
+    span {
+        margin: 0;
+        padding: 0;
+    }
+    /* cuando clickeamos hace este cambio para convertirlo en X*/
+    .top-bar{
+        margin-top: 0px;
+        transform: rotate(135deg);
+    }
+    .middle-bar{
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+
+    .bottom-bar{
+        margin-top: 0px;
+        transform: rotate(-135deg);
+    }
+}
+.navbar-toggler-icon:focus{
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: white;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+.middle-bar {
+    margin-top: 0px;
+}
+
+
+/* cuando esta colapsado se ve de esta manera */
+.navbar-toggler.collapsed {
+    .top-bar{
+        margin-top: -20px;
+        transform: rotate(0deg);
+    }
+    .middle-bar{
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    .bottom-bar{
+        margin-top: 20px;
+        transform: rotate(0deg);
+    }
+}
+
+/* =========== MENU ============ */
+
+
+.nav-item {
+    a{
+        &:focus{
+            color: white;
+        }
+        &:visited{
+            color: white;
+        }
+        &:link{
+            color: white;
+        }
+        &:active{
+            color: #429EA6;
+        }
+        &:hover{
+            color: blue;
+        }
+    }
+} 
+
+a.currentPage{
+    color: #429EA6;
+}
+.navSignIn:hover{
+    color: blue;
+}
+
+
+
+/* ---------------------------/NAVBAR--------------------------- */
