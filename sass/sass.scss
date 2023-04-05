@@ -4,6 +4,7 @@
 @import "footer";
 @import "index";
 @import "preguntas";
+@import "contactos";
 
 
 
@@ -16,6 +17,15 @@
     .direccionFooter{
         opacity: 0;
     }
+    .formUltimo{
+        padding-top: 50vh;
+    }
+}
+@media screen and (max-width: 575px){
+
+    .formUltimo{
+        padding-top: 43vh;
+    }
 }
 
 @media screen and (max-width: 500px){
@@ -23,10 +33,16 @@
         width: 300px;
         height: 150px;
     }
+    .formUltimo{
+        padding-top: 39vh;
+    }
 }
 @media screen and (max-width: 420px){
     .logoNav{
         width: 180px;
         height: 100px;
+    }
+    .formUltimo{
+        padding-top: 30vh;
     }
 }

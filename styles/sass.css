@@ -187,10 +187,6 @@ footer {
 }
 
 /* -------------------- Seccion de preguntas ------------------ */
-.h1Preguntas, .h2Preguntas {
-  color: black;
-}
-
 .h1Preguntas {
   text-align: center;
   padding-top: 1%;
@@ -236,6 +232,21 @@ footer {
   color: blue;
 }
 
+.main-conImagen {
+  background-image: url("../media/background.jpg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.formUltimo {
+  padding-top: 60vh;
+}
+
+.formContactos {
+  padding-left: 10vh;
+}
+
 @media screen and (max-width: 990px) {
   footer {
     flex-wrap: wrap;
@@ -244,16 +255,30 @@ footer {
   .direccionFooter {
     opacity: 0;
   }
+  .formUltimo {
+    padding-top: 50vh;
+  }
+}
+@media screen and (max-width: 575px) {
+  .formUltimo {
+    padding-top: 43vh;
+  }
 }
 @media screen and (max-width: 500px) {
   .logoNav {
     width: 300px;
     height: 150px;
   }
+  .formUltimo {
+    padding-top: 39vh;
+  }
 }
 @media screen and (max-width: 420px) {
   .logoNav {
     width: 180px;
     height: 100px;
+  }
+  .formUltimo {
+    padding-top: 30vh;
   }
 }/*# sourceMappingURL=sass.css.map */
