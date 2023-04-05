@@ -19,14 +19,11 @@
 .btnCotizaContainer{
     display: flex;
     justify-content: center;
-    padding-bottom: 50px;
 }
 
 .btnCotiza{
-    display: flex;  
     width: 30vh;
     text-align: center;
-    justify-content: center;
     background-color: #429EA6;
     padding: 0.5rem 1rem;
     border: 5px solid #ffffff;
@@ -35,7 +32,6 @@
     font-size: 2rem;
     font-weight: bold;
     cursor: pointer;
-    transition: all 0.3s;
     a{
         &:link{
             text-decoration: none;
@@ -45,4 +41,3 @@
         }
     }
 }
-

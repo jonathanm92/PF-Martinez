@@ -1,0 +1,15 @@
+
+/*          Variables         */
+
+$color1: white;
+$color2: black;
+$color3: red;
+
+/*          Mixin           */
+@mixin img-border-style {
+    border: 5px solid $color1;
+    border-top: 0;
+    border-right: 0;
+    border-radius: 2%;
+    border-style: double;
+}
