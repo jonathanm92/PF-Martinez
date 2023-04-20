@@ -52,6 +52,16 @@ body {
   height: 150px;
 }
 
+.btn__precios {
+  box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.501);
+  transition: all 0.5s;
+}
+.btn__precios:hover {
+  font-weight: 300;
+  letter-spacing: 2px;
+  border: 7px solid rgb(255, 255, 255);
+}
+
 .navbar-toggler {
   width: 20px;
   height: 20px;
